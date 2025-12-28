@@ -1,8 +1,8 @@
-# SWIFT: Mining Intrinsic Rewards from LLM Hidden States for Efficient Best-of-N Sampling
+# SWIFT: Mining Intrinsic Rewards from LLM Hidden States for Efficient Best-of-N Sampling (KDD 2026)
 
 🔗Full paper: [https://arxiv.org/abs/2505.20286](https://arxiv.org/abs/2505.12225)
 
-This repository is the official resource for the paper **"Mining Intrinsic Rewards from LLM Hidden States for Efficient Best-of-N Sampling"**. We introduce **SWIFT** (Simple Weighted Intrinsic Feedback Technique), a novel, lightweight, and highly efficient reward modeling approach for Large Language Models (LLMs).
+This repository is the official resource for the paper **"Mining Intrinsic Rewards from LLM Hidden States for Efficient Best-of-N Sampling"** (accepted by KDD 2026 Research Track). We introduce **SWIFT** (Simple Weighted Intrinsic Feedback Technique), a novel, lightweight, and highly efficient reward modeling approach for Large Language Models (LLMs).
 
 ---
 
@@ -77,9 +77,7 @@ SWIFT provides a massive reduction in computational overhead.
 
 ## 💻 Code Release
 
-The repository will be updated with the full implementation and training scripts after publication. We are committed to making our work fully reproducible.
-
-**In the meantime, if you have an urgent need for the code or have specific questions about implementation, please feel free to reach out to the author Jizhou Guo.**
+The repository will be updated with the full implementation and training scripts soon!
 
 ## Citation
 
