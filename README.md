@@ -1,4 +1,4 @@
-# SWIFT: Mining Intrinsic Rewards from LLM Hidden States for Efficient Best-of-N Sampling
+# SWIFT: Mining Intrinsic Rewards from LLM Hidden States for Efficient Best-of-N Sampling (KDD 2026)
 
 This repository is the official code release for **SWIFT** (*Simple Weighted Intrinsic Feedback Technique*), introduced in our KDD 2026 paper.
 
