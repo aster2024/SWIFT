@@ -10,7 +10,7 @@ Mining Intrinsic Rewards from LLM Hidden States for Efficient Best-of-N Sampling
 - Paper: [https://arxiv.org/abs/2505.12225](https://arxiv.org/abs/2505.12225)
 - Slides (promo): [Google Slides](https://docs.google.com/presentation/d/1MtUwGVC2xGDMu0b1TuJAujmfjxFn_TGt/edit?usp=sharing&ouid=101998927371723280988&rtpof=true&sd=true)
 
-https://github.com/user-attachments/assets/f4121674-de22-4dc7-b84d-1faab6f0e5a6
+https://github.com/user-attachments/assets/8be2008d-51de-456f-b785-fefbb66f325a
 
 SWIFT learns a reward function directly from a task-performing LLM’s **intrinsic signals** (hidden states or logits), enabling efficient Best-of-$N$ selection without a massive text-based reward model.
 
