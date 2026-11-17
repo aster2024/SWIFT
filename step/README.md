@@ -13,6 +13,7 @@ and the probe is a lightweight step verifier built on its representations rather
 - Head: SWIFT's fused `Linear(feature_dim, 2)` (gate and reward per token), aggregated as a gated mean inside each step's token span; 32,770 trainable parameters.
 - Training data: [PRM800K](https://github.com/openai/prm800k) phase 1 + phase 2 training splits, with every problem that also appears in ProcessBench removed.
 - Evaluation: [ProcessBench](https://huggingface.co/datasets/Qwen/ProcessBench) (3,400 solutions in four subsets), official metric.
+- Released baseline checkpoint (seed 42): [Aster2024/swift-step-probe-qwen3-8b](https://huggingface.co/Aster2024/swift-step-probe-qwen3-8b).
 
 ## Files
 
@@ -60,5 +61,5 @@ Notes:
 - Using all 37 hidden states (`--layers all`) is unstable across seeds on ProcessBench (30.0 / 11.0 / 4.8) although dev F1 stays at 65–71.
   The step AUC of these probes remains 0.75–0.80: the failure is a global shift of the step scores between PRM800K (GPT-4 solutions)
   and ProcessBench (Qwen and Llama solutions), mostly contributed by early and middle layers, which a fixed threshold cannot absorb.
-- A probe trained on the first 300 samples already reaches about 27 average F1, so most of the gap to fine-tuned PRMs is not about data volume.
+- A single smoke test (all 37 layers, only the first 300 training samples) reached 27.2 average F1; since all-layer probes are unstable, this is only a hint that data volume may not be the main bottleneck.
 - Item-level bootstrap (2,000 resamples within subsets) gives a 95% interval of about ±1.9 points on the average F1 of a single probe.
